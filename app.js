@@ -1,54 +1,12 @@
-const ACCESS_PASSWORD = 'guoqing2026';
-const gate = document.querySelector('#gate');
 const content = document.querySelector('#content');
-const form = document.querySelector('#unlock-form');
-const input = document.querySelector('#password');
-const error = document.querySelector('#gate-error');
+const gate = document.querySelector('#gate');
 
-function readUnlocked() {
-  try { return window.sessionStorage.getItem('travelGuideUnlocked') === '1'; }
-  catch (_) { return false; }
-}
-
-function rememberUnlocked() {
-  try { window.sessionStorage.setItem('travelGuideUnlocked', '1'); }
-  catch (_) { /* 浏览器禁用存储时仍允许本次查看 */ }
-}
-
-function unlock() {
-  gate.hidden = true;
+// 当前版本不设置密码，直接显示页面内容。
+if (gate) gate.remove();
+if (content) {
   content.classList.add('is-ready');
   content.setAttribute('aria-hidden', 'false');
-  rememberUnlocked();
 }
-
-function unlockFromButton(event) {
-  if (event) event.preventDefault();
-  const value = input.value.trim();
-  if (!value) {
-    error.textContent = '请输入密码后再进入。';
-    error.hidden = false;
-    input.focus();
-    return false;
-  }
-  if (value === ACCESS_PASSWORD) {
-    error.hidden = true;
-    unlock();
-  } else {
-    error.textContent = '密码不对，再试一次。';
-    error.hidden = false;
-    input.select();
-  }
-  return false;
-}
-
-window.unlockFromButton = unlockFromButton;
-
-if (readUnlocked()) unlock();
-
-form.addEventListener('submit', (event) => {
-  unlockFromButton(event);
-});
 
 const dayDialog = document.querySelector('#day-dialog');
 const dayDetail = document.querySelector('#day-detail');

@@ -8,23 +8,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="gate" id="gate">
-    <div class="gate-card">
-      <p class="eyebrow">国庆旅行 · 2026</p>
-      <h1>国庆旅行攻略</h1>
-      <p class="gate-copy">呼和浩特 × 乌兰察布</p>
-      <form id="unlock-form">
-        <label for="password">输入同行密码</label>
-        <div class="password-row">
-          <input id="password" type="password" autocomplete="off" placeholder="请输入密码" required>
-          <button type="submit" onclick="return unlockFromButton(event)">进入攻略</button>
-        </div>
-        <p class="gate-error" id="gate-error" role="alert" hidden>密码不对，再试一次。</p>
-      </form>
-    </div>
-  </div>
-
-  <main class="page hub-page" id="content" aria-hidden="true">
+  <main class="page hub-page" id="content">
     <header class="topbar">
       <a class="brand" href="index.html">国庆旅行攻略</a>
     </header>
