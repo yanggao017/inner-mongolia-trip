@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
-  <title id="title">呼和浩特周边自驾路线手绘示意图</title>
-  <desc id="desc">以呼和浩特为住宿基地，展示哈达门、敕勒川、黄花窝铺、红石崖、九龙湾和辉腾锡勒方向的方位、距离和车程。</desc>
+  <title id="title">呼和浩特周边自驾路线方位示意图（已按公开地图校核）</title>
+  <desc id="desc">以呼和浩特为住宿基地，按公开地图中的相对方位展示哈达门、敕勒川、黄花窝铺、红石崖、九龙湾和辉腾锡勒方向；图中位置不按比例，距离为公路规划估算。</desc>
   <defs>
     <filter id="paperNoise" x="-10%" y="-10%" width="120%" height="120%">
       <feTurbulence type="fractalNoise" baseFrequency="0.82" numOctaves="2" seed="7" result="noise"/>
@@ -19,18 +19,19 @@
   <g filter="url(#paperNoise)">
     <text class="ink" x="55" y="83" font-size="28" fill="#5c9f79">呼和浩特</text>
     <text class="ink" x="56" y="116" font-size="28" fill="#5c9f79">周边自驾</text>
-    <text class="ink small" x="1045" y="74" fill="#6f756e">北 ↑</text>
+    <text class="ink small" x="1040" y="74" fill="#6f756e">北 ↑</text>
+    <text class="ink small" x="820" y="720" fill="#8b857a">方向按公开地图校核 · 位置不按比例</text>
 
     <!-- hand-drawn route lines -->
-    <path class="route" stroke="#78956f" d="M525 376 C488 330 462 274 414 210 C389 177 374 150 370 119"/>
-    <path class="route" stroke="#78956f" opacity=".35" d="M530 379 C493 333 464 273 418 213 C392 179 378 149 372 120"/>
-    <path class="route" stroke="#5d8ea0" d="M507 382 C449 361 397 343 337 326 C298 315 274 305 240 295"/>
-    <path class="route" stroke="#d36d58" d="M545 365 C608 326 668 278 722 222 C760 183 785 150 814 112"/>
-    <path class="route" stroke="#d36d58" opacity=".35" d="M548 370 C613 332 671 282 726 226 C762 188 791 151 817 115"/>
-    <path class="route" stroke="#b45a62" d="M555 383 C640 371 717 354 808 326 C868 308 910 294 965 286"/>
-    <path class="route" stroke="#886ca7" d="M558 400 C650 430 738 454 823 478 C863 490 893 505 928 534"/>
-    <path class="route" stroke="#4f8caa" d="M574 350 C658 297 739 260 820 251 C884 243 940 214 1000 174"/>
-    <path class="route" stroke="#aa8c57" d="M519 407 C545 466 569 512 611 574"/>
+    <path class="route" stroke="#78956f" d="M525 376 C493 329 469 273 442 220 C424 186 419 153 414 119"/>
+    <path class="route" stroke="#78956f" opacity=".35" d="M530 379 C498 332 474 276 447 223 C429 189 424 156 418 121"/>
+    <path class="route" stroke="#5d8ea0" d="M530 377 C553 335 585 293 629 258 C644 246 654 235 665 222"/>
+    <path class="route" stroke="#d36d58" d="M545 365 C603 317 656 261 706 211 C734 182 752 151 770 119"/>
+    <path class="route" stroke="#d36d58" opacity=".35" d="M548 370 C606 322 660 266 711 215 C739 186 757 155 774 122"/>
+    <path class="route" stroke="#b45a62" d="M555 383 C636 355 714 321 788 300 C838 286 883 275 925 267"/>
+    <path class="route" stroke="#886ca7" d="M558 398 C619 396 681 389 733 379 C759 374 781 369 804 362"/>
+    <path class="route" stroke="#4f8caa" d="M574 350 C663 296 747 249 830 205 C887 174 940 142 1000 106"/>
+    <path class="route" stroke="#aa8c57" d="M579 399 C606 406 630 415 658 421"/>
 
     <!-- central base -->
     <g filter="url(#shadow)"><rect x="422" y="348" width="188" height="74" rx="19" fill="#f4d970" transform="rotate(-2 516 385)"/></g>
@@ -38,33 +39,33 @@
     <text class="ink label" x="448" y="379">呼和浩特</text><text class="ink note" x="450" y="405">住宿基地</text>
 
     <!-- destination dots -->
-    <circle cx="370" cy="119" r="8" fill="#78956f"/><circle cx="240" cy="295" r="8" fill="#5d8ea0"/>
-    <circle cx="814" cy="112" r="8" fill="#d36d58"/><circle cx="965" cy="286" r="8" fill="#b45a62"/>
-    <circle cx="928" cy="534" r="8" fill="#886ca7"/><circle cx="1000" cy="174" r="8" fill="#4f8caa"/>
-    <circle cx="611" cy="574" r="8" fill="#aa8c57"/>
+    <circle cx="414" cy="119" r="8" fill="#78956f"/><circle cx="665" cy="222" r="8" fill="#5d8ea0"/>
+    <circle cx="770" cy="119" r="8" fill="#d36d58"/><circle cx="925" cy="267" r="8" fill="#b45a62"/>
+    <circle cx="804" cy="362" r="8" fill="#886ca7"/><circle cx="1000" cy="106" r="8" fill="#4f8caa"/>
+    <circle cx="658" cy="421" r="8" fill="#aa8c57"/>
 
     <!-- labels -->
-    <text class="ink label" x="284" y="97">哈达门森林公园</text>
-    <text class="ink small" x="286" y="128" fill="#78956f">北 · 30–45 km · 50–80 min</text>
+    <text class="ink label" x="275" y="97">哈达门森林公园</text>
+    <text class="ink small" x="277" y="128" fill="#78956f">北/西北 · 30–45 km · 50–80 min</text>
 
-    <text class="ink label" x="82" y="274">敕勒川草原</text>
-    <text class="ink small" x="83" y="304" fill="#5d8ea0">东北 · 20–30 km · 35–55 min</text>
+    <text class="ink label" x="590" y="183">敕勒川草原</text>
+    <text class="ink small" x="590" y="213" fill="#5d8ea0">东北 · 20–30 km · 35–55 min</text>
 
-    <text class="ink label" x="742" y="76">黄花窝铺</text>
-    <text class="ink small" x="742" y="101" fill="#d36d58">东北 · 35–50 km · 60–90 min</text>
+    <text class="ink label" x="690" y="76">黄花窝铺</text>
+    <text class="ink small" x="690" y="101" fill="#d36d58">北偏东 · 35–50 km · 60–90 min</text>
 
-    <text class="ink label" x="973" y="275">红石崖</text>
-    <text class="ink small" x="973" y="305" fill="#b45a62">东/东北 · 50–75 km · 1.5–2 h</text>
+    <text class="ink label" x="936" y="254">红石崖</text>
+    <text class="ink small" x="936" y="284" fill="#b45a62">东北 · 50–75 km · 1.5–2 h</text>
 
-    <text class="ink label" x="900" y="580">九龙湾</text>
-    <text class="ink small" x="900" y="609" fill="#886ca7">东/东北 · 45–65 km · 1–1.5 h</text>
+    <text class="ink label" x="818" y="362">九龙湾</text>
+    <text class="ink small" x="818" y="391" fill="#886ca7">东北/东 · 45–65 km · 1–1.5 h</text>
 
-    <text class="ink label" x="914" y="134">辉腾锡勒方向</text>
-    <text class="ink small" x="914" y="161" fill="#4f8caa">黄花沟 / 牛粑粑 / 二阳卜</text>
-    <text class="ink small" x="914" y="187" fill="#4f8caa">北偏东 · 130–180 km · 2–3 h</text>
+    <text class="ink label" x="865" y="76">辉腾锡勒方向</text>
+    <text class="ink small" x="865" y="103" fill="#4f8caa">黄花沟 / 牛粑粑 / 二阳卜</text>
+    <text class="ink small" x="865" y="129" fill="#4f8caa">东北偏东 · 130–180 km · 2–3 h</text>
 
-    <text class="ink label" x="627" y="618">内蒙古博物院 / 美术馆</text>
-    <text class="ink small" x="628" y="645" fill="#aa8c57">市区东侧 · 约 2–15 km</text>
+    <text class="ink label" x="680" y="451">内蒙古博物院 / 美术馆</text>
+    <text class="ink small" x="681" y="478" fill="#aa8c57">市区东侧 · 约 2–15 km</text>
 
     <!-- route notes -->
     <g filter="url(#shadow)"><rect x="53" y="492" width="292" height="133" rx="8" fill="#d9efd9" transform="rotate(-2 199 558)"/></g>
