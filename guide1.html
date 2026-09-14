@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4efe6">
+  <title>攻略一｜呼和浩特 × 乌兰察布</title>
+  <link rel="stylesheet" href="styles.css?v=20260914">
+</head>
+<body>
+  <div class="gate" id="gate">
+    <div class="gate-card">
+      <p class="eyebrow">国庆旅行 · 2026</p>
+      <h1>国庆，向北一步</h1>
+      <p class="gate-copy">呼和浩特 × 乌兰察布<br>草原 · 火山 · 森林 · 湖泊</p>
+      <form id="unlock-form">
+        <label for="password">输入同行密码</label>
+        <div class="password-row">
+          <input id="password" type="password" autocomplete="off" placeholder="请输入密码" required>
+          <button type="submit" onclick="return unlockFromButton(event)">进入攻略</button>
+        </div>
+        <p class="gate-error" id="gate-error" role="alert" hidden>密码不对，再试一次。</p>
+      </form>
+    </div>
+  </div>
+
+  <main class="page" id="content" aria-hidden="true">
+    <header class="topbar">
+      <a class="brand back-link" href="index.html" aria-label="返回攻略选择页"><span class="back-arrow" aria-hidden="true">←</span>国庆旅行攻略 <span>/ 攻略一</span></a>
+      <nav>
+        <a href="#route">路线</a>
+        <a href="#days">日程</a>
+        <a href="#notes">备忘</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">五天四晚 · 呼和浩特与乌兰察布</p>
+        <h1>国庆，<br><em>向北一步</em></h1>
+        <p class="hero-lede">从城里的烟火出发，开进草原、火山和秋色森林。整体节奏按 09:30–10:00 出发设计，高铁日单独计算。</p>
+        <div class="hero-meta"><span>北京 → 呼和浩特 → 乌兰察布</span><span>自驾 3 天 · 集宁连住</span></div>
+      </div>
+      <div class="hero-art" aria-label="草原、风车与火山的路线示意图">
+        <div class="sun"></div><div class="mountain mountain-a"></div><div class="mountain mountain-b"></div>
+        <div class="road"></div><div class="windmill windmill-a"></div><div class="windmill windmill-b"></div>
+        <span class="art-label">草原<br>→ 火山</span>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="旅行概览">
+      <div><strong>5</strong><span>天行程</span></div>
+      <div><strong>4</strong><span>晚住宿</span></div>
+      <div><strong>2</strong><span>座城市</span></div>
+      <div><strong>3</strong><span>种自然地貌</span></div>
+    </section>
+
+    <section class="section" id="route">
+      <div class="section-heading"><p class="eyebrow">路线</p><h2>行程路线</h2><p>呼和浩特住 1 晚，集宁住 3 晚。第 2 天 取车后连续往返景区。</p></div>
+      <div class="route-rail">
+        <div class="route-stop city"><span>01</span><b>呼和浩特</b><small>城市老街 · 住 1 晚</small></div>
+        <div class="rail-line"></div>
+        <div class="route-stop grass"><span>02</span><b>辉腾锡勒</b><small>风车草原 · 黄花沟</small></div>
+        <div class="rail-line"></div>
+        <div class="route-stop base"><span>03</span><b>集宁</b><small>连续住 3 晚 · 自驾基地</small></div>
+        <div class="rail-line"></div>
+        <div class="route-stop volcano"><span>04</span><b>乌兰哈达</b><small>火山群 · 一日往返</small></div>
+      </div>
+    </section>
+
+    <section class="section days-section" id="days">
+      <div class="section-heading"><p class="eyebrow">每日</p><h2>每日安排</h2></div>
+      <div class="day-grid">
+        <article class="day-card day-trigger city-card" data-day="day1" tabindex="0" role="button" aria-label="查看 第 1 天 详细行程"><div class="day-top"><span class="day-no">第 01 天</span><span class="tag">高铁日</span></div><h3>北京 → 呼和浩特</h3><p class="route-text">城市景点和晚餐</p><div class="time-list"><p><b>上午</b> 高铁到呼和浩特。</p><p><b>下午</b> 老城景点短停，步行与短途打车衔接。</p></div><div class="chips"><span>景点间约 7.5–8.5 km</span><span>详细安排 ↗</span></div></article>
+        <article class="day-card day-trigger grass-card" data-day="day2" tabindex="0" role="button" aria-label="查看 第 2 天 详细行程"><div class="day-top"><span class="day-no">第 02 天</span><span class="tag">取车</span></div><h3>呼和浩特 → 辉腾锡勒 → 黄花沟 → 集宁</h3><p class="route-text">风车草原和高山峡谷</p><div class="time-list"><p><b>09:30–10:00</b> 取车、加油后出发。</p><p><b>13:30–17:30</b> 黄花沟游览，晚上住集宁。</p></div><div class="chips"><span>全天约 235–280 km</span><span>详细安排 ↗</span></div></article>
+        <article class="day-card day-trigger volcano-card" data-day="day3" tabindex="0" role="button" aria-label="查看 第 3 天 详细行程"><div class="day-top"><span class="day-no">第 03 天</span><span class="tag hot">主景</span></div><h3>乌兰哈达火山群</h3><p class="route-text">3 号 → 5 号 → 6 号火山</p><div class="time-list"><p><b>09:30–10:00</b> 集宁出发。</p><p><b>11:00–16:30</b> 游客中心确认路线，重点看 3、5、6 号火山。</p></div><div class="chips"><span>防滑鞋</span><span>详细安排 ↗</span></div></article>
+        <article class="day-card day-trigger forest-card" data-day="day4" tabindex="0" role="button" aria-label="查看 第 4 天 详细行程"><div class="day-top"><span class="day-no">第 04 天</span><span class="tag">森林</span></div><h3>苏木山森林公园</h3><p class="route-text">森林、山脊和高山草甸</p><div class="time-list"><p><b>09:30–10:00</b> 集宁出发。</p><p><b>11:00–17:00</b> 白桦林步道、黄石崖、冰凌沟。</p></div><div class="chips"><span>徒步约 3–4 h</span><span>详细安排 ↗</span></div></article>
+        <article class="day-card day-trigger return-card" data-day="day5" tabindex="0" role="button" aria-label="查看 第 5 天 详细行程"><div class="day-top"><span class="day-no">第 05 天</span><span class="tag">返程</span></div><h3>乌兰察布 → 北京</h3><p class="route-text">直达高铁返京</p><div class="time-list"><p><b>上午</b> 早餐、退房，前往乌兰察布站。</p><p><b>参考</b> G2482 或 G2502；异地还车受限时回呼和浩特。</p></div><div class="chips"><span>二等座约 ¥146–168</span><span>详细安排 ↗</span></div></article>
+      </div>
+    </section>
+
+    <div class="day-detail-source" hidden>
+      <section data-day-detail="day1"><p class="eyebrow">第 01 天 · 高铁日</p><h2>北京 → 呼和浩特</h2><p class="detail-route">城市景点短停 + 呼和浩特老城晚餐</p><h4>高铁参考</h4><table><tr><th>车次</th><th>时间</th><th>二等座</th></tr><tr><td>G2461</td><td>北京北 08:03 → 呼和浩特东 10:12</td><td>约 ¥203</td></tr><tr><td>G2491</td><td>北京北 08:32 → 呼和浩特 10:59</td><td>约 ¥220.5</td></tr><tr><td>G2505</td><td>清河 08:05 → 呼和浩特东 10:37</td><td>约 ¥185</td></tr></table><h4>时间表</h4><ul><li>11:30–12:30：到酒店寄存行李、午餐。</li><li>12:30–15:00：宝尔汗佛塔 → 观音寺 → 大召寺 → 塞上老街。</li><li>15:00–16:30：清真大寺、五塔寺快速参观。</li><li>16:40–17:30：打车到将军衙署；抵达晚可删减。</li><li>17:30 后：大召寺/塞上老街附近吃烧麦、手把肉、羊杂碎、奶茶。体力好再去大青山观景平台看夕阳。</li></ul><h4>距离和住宿</h4><p>呼和浩特东站到市区约 8–10 km；景点间约 7.5–8.5 km，步行与短途打车约 1.5–2 小时。住呼和浩特市区一晚：美食优先住大召寺/中山路，第二天取车优先住呼和浩特东站或如意开发区。</p></section>
+      <section data-day-detail="day2"><p class="eyebrow">第 02 天 · 取车</p><h2>呼和浩特 → 辉腾锡勒 → 黄花沟 → 集宁</h2><p class="detail-route">风车草原短停，黄花沟作为当天主要购票景区</p><h4>路程</h4><table><tr><th>路段</th><th>距离</th><th>车程</th></tr><tr><td>呼和浩特 → 辉腾锡勒</td><td>135–150 km</td><td>2–2.5 h</td></tr><tr><td>辉腾锡勒 → 黄花沟南门</td><td>10–20 km</td><td>20–30 min</td></tr><tr><td>黄花沟 → 集宁</td><td>90–110 km</td><td>1.5–2 h</td></tr></table><h4>时间表</h4><ul><li>09:30–10:00：取车、加油，出发。</li><li>12:00–12:45：辉腾锡勒风车群、草原公路或开阔草甸拍照。</li><li>13:00：前往黄花沟南门，简餐或使用自带午餐。</li><li>13:30–17:30：黄花沟南门进出，重点看沟顶草甸、峡谷步道和观景台。</li><li>17:30 后：开往集宁，预计 19:00–20:00 到达，之后连续住集宁。</li></ul><h4>门票和取舍</h4><p>门票、套票和《相会敖包》演出场次以当天官方页面为准。小火车、马拉车和缆车按兴趣选择；体力有限时优先步行，沟底停留控制在 30–60 分钟。二阳卜可顺路远眺，牛粑粑草原作为备选。</p></section>
+      <section data-day-detail="day3"><p class="eyebrow">第 03 天 · 主景</p><h2>乌兰哈达火山群一日游</h2><p class="detail-route">集宁往返约 180 km，单程按 1.5–2 h 预留</p><h4>时间表</h4><ul><li>09:30–10:00：集宁出发；提前加油、带饮水和简餐。</li><li>11:00–12:00：到游客中心确认入口、预约、单向路线和车辆通行规则。</li><li>12:00–15:30：重点游览 3 号、5 号、6 号火山，选 1–2 座登顶。</li><li>15:30–16:30：时间充足再补看 7、8 号火山或熔岩地貌。</li><li>16:30–19:30：返程集宁，晚餐后原酒店休息。</li></ul><h4>推荐顺序</h4><p><b>3 号火山</b>：栈道登顶约 40–60 分钟；<b>5 号火山</b>：碎石坡较陡，停留 30–60 分钟；<b>6 号火山</b>：黑色熔岩地貌和拍摄点集中，山脚拍照约 30–45 分钟。</p><h4>注意事项</h4><p>导航先搜“乌兰哈达火山地质公园游客中心”。预约、车辆限流、通行证、景交车和约 60 元的公开信息参考费用都要以当天公告为准。穿防滑运动鞋，带防风外套、帽子、薄手套、墨镜和防晒；停车拍照选择正规停车区。</p></section>
+      <section data-day-detail="day4"><p class="eyebrow">第 04 天 · 森林</p><h2>苏木山森林公园一日游</h2><p class="detail-route">集宁往返约 210–220 km，单程 1.5–2 h</p><h4>时间表</h4><ul><li>09:30–10:00：集宁出发，加油并准备午餐、饮水。</li><li>11:00–12:00：游客中心确认开放时间、门票、摆渡车和索道/观光车。</li><li>12:00–16:00：接驳上山，走白桦林步道 → 黄石崖（望天崖）→ 冰凌沟；核心徒步约 3–4 小时。</li><li>16:00–17:00：返回游客中心，补给后离园。</li><li>17:00–19:00：返回集宁，继续住原酒店。</li></ul><h4>景区重点</h4><p>主要看落叶松、白桦林、高山草甸、奇石和山脊视野。黄石崖视野最好，核心步道约 3–4 小时。国庆开放时间、接驳和索道运行情况以景区公告为准；大风、降雪或路滑时改走低处森林步道。</p><h4>替代方案</h4><p>苏木山当日未开放时可选岱海湿地（集宁单程约 70–80 km）、红石崖国家生态公园（约 110–130 km），或只走集宁周边草原公路。</p></section>
+      <section data-day-detail="day5"><p class="eyebrow">第 05 天 · 返程</p><h2>乌兰察布 → 北京</h2><p class="detail-route">优先购买乌兰察布站直达北京北站或清河站的车次</p><h4>高铁参考</h4><table><tr><th>车次</th><th>时间</th><th>二等座</th></tr><tr><td>G2454</td><td>08:47 → 清河 10:34</td><td>约 ¥162</td></tr><tr><td>G2560</td><td>09:26 → 清河 11:10</td><td>约 ¥146</td></tr><tr><td>G2482</td><td>10:10 → 北京北 12:04</td><td>约 ¥168</td></tr><tr><td>G2502</td><td>10:38 → 清河 12:34</td><td>约 ¥162</td></tr><tr><td>G2464</td><td>11:05 → 北京北 13:10</td><td>约 ¥163</td></tr></table><h4>安排</h4><ul><li>08:00–09:00：集宁早餐、整理行李、退房。</li><li>09:00–09:30：前往乌兰察布站，至少提前 15–20 分钟进站。</li><li>想睡晚一点优先 G2482 或 G2502；车次和票价以 12306 为准。</li></ul><h4>异地还车受限时</h4><p>09:30–10:00 从集宁开回呼和浩特，约 142 km / 2–2.5 h；还车、验车、午餐和进站至少预留 2–3 小时，返京车票按还车时间预留余量。</p></section>
+    </div>
+
+    <dialog class="day-dialog" id="day-dialog"><div class="dialog-inner"><button class="dialog-close" type="button" aria-label="关闭">×</button><div id="day-detail"></div></div></dialog>
+
+    <section class="section alternatives" id="notes">
+      <div class="section-heading"><p class="eyebrow">天气备选</p><h2>天气替代方案｜详细执行表</h2><p>四个方案均从集宁出发。</p></div>
+      <div class="alt-list">
+        <details open><summary><span>A</span><b>岱海湿地 + 周边山地</b><small>约 70–80 km · 单程 1.5–2 h</small></summary><div class="alt-detail"><p><b>适合：</b>苏木山当日封闭，以湖景和轻松散步为主；小雨或阴天可以去，强风、道路结冰时以湖边短走为主。</p><div class="alt-facts"><span><b>往返</b>约 140–160 km</span><span><b>驾驶</b>约 3–4 h</span><span><b>游览</b>3–4 h</span><span><b>午餐</b>凉城县城补给</span></div><ol><li><time>09:30–10:00</time><p>集宁出发，导航输入岱海旅游区/具体湖滨观景点并确认入口。</p></li><li><time>11:00–12:30</time><p>湖滨散步、湿地栈道、拍芦苇和远山；候鸟、游船和局部设施按当天开放情况安排。</p></li><li><time>12:30–13:30</time><p>去凉城县城吃饭、加水和补充简餐。</p></li><li><time>13:30–15:30</time><p>天气稳定时去蛮汉山/二龙什台方向选择一段已开放的山地步道；风大或路滑时以湖边短走为主。</p></li><li><time>16:00</time><p>开始返程，18:00–19:00 回到集宁，继续住原酒店。</p></li></ol><p class="alt-note">环湖路线按开放道路和当天时间安排；游船、温泉、湿地设施和停车收费以现场公告为准。</p></div></details>
+        <details open><summary><span>B</span><b>红石崖国家生态公园</b><small>约 110–130 km · 单程 2–2.5 h</small></summary><div class="alt-detail"><p><b>适合：</b>苏木山当日未开放且高速和山路通行正常，且愿意接受当天最长车程。大风、降雪或能见度低时安排市区方案。</p><div class="alt-facts"><span><b>往返</b>约 220–260 km</span><span><b>驾驶</b>约 4–5 h</span><span><b>游览</b>3–4 h</span><span><b>强度</b>中等</span></div><ol><li><time>09:30</time><p>集宁出发，提前加油，导航输入“红石崖国家生态公园/售票处”。</p></li><li><time>11:30–12:00</time><p>抵达后先确认售票、停车、接驳和当天开放的峡谷路线，确认当日开放后入园。</p></li><li><time>12:00–12:40</time><p>景区附近午餐或自带简餐，先把返程时间固定下来。</p></li><li><time>12:40–15:30</time><p>红石峡谷丹霞栈道 → 高山草原/山脊观景台 → 红石崖寺；骑马、卡丁车、射箭等项目最多选一项。</p></li><li><time>15:30–16:00</time><p>离园并开始返集宁，18:00–19:00 左右到达。</p></li></ol><p class="alt-note">景区项目、门票、接驳车和最后入园时间每年可能调整；日落拍摄安排在返程时间允许的范围内，国庆山路天黑后视线更差。</p></div></details>
+        <details open><summary><span>C</span><b>集宁周边草原公路和观景点</b><small>单程 5–60 km · 灵活调整</small></summary><div class="alt-detail"><p><b>适合：</b>封山、降雪、大风，或偏好短途驾驶。当天选择一条路线。</p><div class="local-routes"><div><b>霸王河/老虎山公园</b><span>5–10 km · 15–25 min</span><p>城市高点、河谷、公园散步和夜景；雨雪天优先选这里。</p></div><div><b>黄旗海周边道路</b><span>20–35 km · 30–45 min</span><p>湖泊远眺、草地、风车和日落，选择安全停车点。</p></div><div><b>黄花窝铺村/科凉线方向</b><span>40–60 km · 50–70 min</span><p>草原公路、牛羊和风车群；只在路面干燥、能见度好时去。</p></div><div><b>牛粑粑欢乐草原西区</b><span>30–50 km · 45–60 min</span><p>草地拍照、亲子设施和简餐，先确认具体分区是否营业。</p></div></div><ol><li><time>09:30–10:00</time><p>从集宁出发，按天气选一个点；出发前看高德/百度实时路况。</p></li><li><time>11:00–12:30</time><p>完成第一段观景，遇到大风、路滑或积雪时返回集宁。</p></li><li><time>12:30–14:00</time><p>回集宁城区吃饭、补给，午餐安排在集宁城区。</p></li><li><time>14:00–16:30</time><p>天气稳定时增加一个近距离点；天气变化时回酒店休息。</p></li><li><time>17:00 前</time><p>回到集宁市区，晚上安排市区活动。</p></li></ol><p class="alt-note">停车点选择停车区或安全路肩，草场进入遵循开放区域和牧民许可，门票、骑马等附加消费按现场价格计入。</p></div></details>
+        <details open><summary><span>D</span><b>集宁城区休息日</b><small>0–10 km · 最低风险</small></summary><div class="alt-detail"><p><b>适合：</b>持续降雪、结冰、强风、低能见度，或前两天已经较累。当天以休息和补给为主。</p><div class="alt-facts"><span><b>驾驶</b>0–20 km</span><span><b>步行</b>1–3 h</span><span><b>重点</b>补给/洗衣/休息</span><span><b>住宿</b>集宁连住</span></div><ol><li><time>10:00–11:30</time><p>睡晚一点，在酒店附近吃早餐；检查返程车票、租车合同和天气预警。</p></li><li><time>11:30–13:00</time><p>在霸王河或老虎山等市区公园短走；路滑时安排室内休息。</p></li><li><time>13:00–15:00</time><p>回城区吃饭、采购零食和返程早餐，顺便给车辆加油。</p></li><li><time>15:00 后</time><p>酒店休息、整理行李，确认 第 5 天 乌兰察布站出发时间；下午安排市区休息与返程准备。</p></li></ol><p class="alt-note">租车合同允许时，这天提前确认还车流程；恶劣天气时车辆停在市区，优先保障行车安全。</p></div></details>
+      </div>
+    </section>
+
+    <section class="section practical">
+      <div class="section-heading"><p class="eyebrow">出发前备忘</p><h2>出发前记住这几件事</h2></div>
+      <div class="note-grid"><div><b>穿什么</b><p>火山碎石坡和森林步道都穿防滑运动/徒步鞋；国庆早晚带防风外套、帽子和薄手套。</p></div><div><b>怎么走</b><p>导航只做参考，乌兰哈达入口、单向路线、接驳车和预约规则以当天公告为准。</p></div><div><b>吃什么</b><p>呼和浩特安排烧麦、手把肉、羊杂碎、奶茶；草原和火山日自带简餐、饮水。</p></div><div><b>住哪里</b><p>呼和浩特住大召寺/中山路或呼和浩特东站附近；第 2 天–4 连住集宁。</p></div></div>
+    </section>
+
+    <footer><span>国庆旅行攻略</span><span>路线与价格请以出发当天官方信息为准</span></footer>
+  </main>
+  <script src="app.js?v=20260914b"></script>
+</body>
+</html>

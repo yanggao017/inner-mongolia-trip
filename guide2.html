@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4efe6">
+  <title>攻略二｜呼和浩特周边自驾</title>
+  <link rel="stylesheet" href="styles.css?v=20260914c">
+</head>
+<body>
+  <div class="gate" id="gate">
+    <div class="gate-card">
+      <p class="eyebrow">国庆旅行 · 2026</p>
+      <h1>国庆旅行攻略</h1>
+      <p class="gate-copy">呼和浩特周边自驾</p>
+      <form id="unlock-form">
+        <label for="password">输入同行密码</label>
+        <div class="password-row"><input id="password" type="password" autocomplete="off" placeholder="请输入密码" required><button type="submit" onclick="return unlockFromButton(event)">进入攻略</button></div>
+        <p class="gate-error" id="gate-error" role="alert" hidden>密码不对，再试一次。</p>
+      </form>
+    </div>
+  </div>
+
+  <main class="page" id="content" aria-hidden="true">
+    <header class="topbar">
+      <a class="brand back-link" href="index.html" aria-label="返回攻略选择页"><span class="back-arrow" aria-hidden="true">←</span>国庆旅行攻略 <span>/ 攻略二</span></a>
+      <nav><a href="#route">路线</a><a href="#days">日程</a><a href="#notes">备忘</a></nav>
+    </header>
+
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">呼和浩特周边 · 六天五晚</p>
+        <h1>呼和浩特<br><em>周边自驾</em></h1>
+        <p class="hero-lede">以呼和浩特为住宿基地，常规游览日 10:00 左右出发，组合近郊山地、草原公路和室内场馆。</p>
+        <div class="hero-meta"><span>呼和浩特住宿基地</span><span>完整版 6 天 5 晚</span></div>
+      </div>
+      <div class="hero-art" aria-label="山地、草原与城市路线示意图">
+        <div class="sun"></div><div class="mountain mountain-a"></div><div class="mountain mountain-b"></div>
+        <div class="road"></div><div class="windmill windmill-a"></div><div class="windmill windmill-b"></div>
+        <span class="art-label">城市<br>→ 草原</span>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="旅行概览">
+      <div><strong>6</strong><span>天行程</span></div>
+      <div><strong>5</strong><span>晚住宿</span></div>
+      <div><strong>4</strong><span>自驾模块</span></div>
+      <div><strong>2</strong><span>类场馆</span></div>
+    </section>
+
+    <section class="section" id="route">
+      <div class="section-heading"><p class="eyebrow">路线</p><h2>行程路线</h2><p>呼和浩特一地连住，四个模块按山地、森林、草原与室内场馆分配。</p></div>
+      <div class="route-rail">
+        <div class="route-stop city"><span>01</span><b>呼和浩特</b><small>抵达与城市老城 · 连住</small></div><div class="rail-line"></div>
+        <div class="route-stop grass"><span>02</span><b>黄花窝铺</b><small>红石崖 · 东北山地</small></div><div class="rail-line"></div>
+        <div class="route-stop base"><span>03</span><b>哈达门</b><small>森林公园 · 敕勒川</small></div><div class="rail-line"></div>
+        <div class="route-stop volcano"><span>04</span><b>科凉线</b><small>牛粑粑 · 二阳卜</small></div><div class="rail-line"></div>
+        <div class="route-stop forest"><span>05</span><b>室内场馆</b><small>博物院 · 美术馆</small></div>
+      </div>
+    </section>
+
+    <section class="section" id="plan">
+      <div class="section-heading"><p class="eyebrow">行程</p><h2>天数安排</h2><p>四个模块完整游览安排六天五晚；五天四晚版本保留 A、B、D 三个模块。</p></div>
+      <div class="plan-table">
+        <div class="plan-row plan-head"><b>版本</b><b>日程</b><b>住宿</b></div>
+        <div class="plan-row"><b>六天五晚</b><span>第 1 天 城市抵达 · 第 2 天 A · 第 3 天 B · 第 4 天 C · 第 5 天 D · 第 6 天 返京</span><span>呼和浩特连住</span></div>
+        <div class="plan-row"><b>五天四晚</b><span>第 1 天 城市抵达 · 第 2 天 A · 第 3 天 B · 第 4 天 D · 第 5 天 返京</span><span>呼和浩特连住</span></div>
+      </div>
+    </section>
+
+    <section class="section days-section" id="days">
+      <div class="section-heading"><p class="eyebrow">每日</p><h2>每日安排</h2></div>
+      <div class="day-grid">
+        <article class="day-card day-trigger city-card" data-day="g2d1" tabindex="0" role="button" aria-label="查看 第 1 天 详细行程"><div class="day-top"><span class="day-no">第 01 天</span><span class="tag">抵达</span></div><h3>北京 → 呼和浩特</h3><p class="route-text">大召寺、塞上老街和晚餐</p><div class="time-list"><p><b>上午</b> 高铁抵达，酒店寄存行李。</p><p><b>下午</b> 老城建筑短停，晚餐安排地方风味。</p></div><div class="chips"><span>市区步行与短途打车</span><span>详细安排 ↗</span></div></article>
+        <article class="day-card day-trigger grass-card" data-day="g2d2" tabindex="0" role="button" aria-label="查看 第 2 天 详细行程"><div class="day-top"><span class="day-no">第 02 天</span><span class="tag">模块 A</span></div><h3>黄花窝铺 → 红石崖</h3><p class="route-text">草甸、牧场与红色岩壁</p><div class="time-list"><p><b>10:00</b> 呼和浩特酒店出发。</p><p><b>13:30–16:15</b> 红石崖主要游览。</p></div><div class="chips"><span>约 115–175 km</span><span>详细安排 ↗</span></div></article>
+        <article class="day-card day-trigger forest-card" data-day="g2d3" tabindex="0" role="button" aria-label="查看 第 3 天 详细行程"><div class="day-top"><span class="day-no">第 03 天</span><span class="tag">模块 B</span></div><h3>哈达门 → 敕勒川</h3><p class="route-text">森林、高山草甸与平地草原</p><div class="time-list"><p><b>10:00</b> 呼和浩特酒店出发。</p><p><b>11:15–14:30</b> 哈达门景区游览。</p></div><div class="chips"><span>约 95–140 km</span><span>详细安排 ↗</span></div></article>
+        <article class="day-card day-trigger volcano-card" data-day="g2d4" tabindex="0" role="button" aria-label="查看 第 4 天 详细行程"><div class="day-top"><span class="day-no">第 04 天</span><span class="tag hot">模块 C</span></div><h3>科凉线 → 牛粑粑 → 二阳卜</h3><p class="route-text">远郊草原公路一日线</p><div class="time-list"><p><b>10:00</b> 出城前往辉腾锡勒方向。</p><p><b>16:00</b> 开始返呼，完整车程约 4.5–6.5 小时。</p></div><div class="chips"><span>约 280–360 km</span><span>详细安排 ↗</span></div></article>
+        <article class="day-card day-trigger city-card" data-day="g2d5" tabindex="0" role="button" aria-label="查看 第 5 天 详细行程"><div class="day-top"><span class="day-no">第 05 天</span><span class="tag">模块 D</span></div><h3>博物院 → 美术馆</h3><p class="route-text">草原历史与当期艺术展览</p><div class="time-list"><p><b>10:00</b> 前往内蒙古博物院新馆。</p><p><b>14:40</b> 前往内蒙古美术馆。</p></div><div class="chips"><span>室内参观约 6–7 h</span><span>详细安排 ↗</span></div></article>
+        <article class="day-card day-trigger return-card" data-day="g2d6" tabindex="0" role="button" aria-label="查看 第 6 天 详细行程"><div class="day-top"><span class="day-no">第 06 天</span><span class="tag">返程</span></div><h3>呼和浩特 → 北京</h3><p class="route-text">还车后乘高铁返京</p><div class="time-list"><p><b>上午</b> 早餐、退房、办理还车。</p><p><b>返程</b> 呼和浩特东站乘高铁。</p></div><div class="chips"><span>市区还车 + 高铁</span><span>详细安排 ↗</span></div></article>
+      </div>
+    </section>
+
+    <div class="day-detail-source" hidden>
+      <section data-day-detail="g2d1"><p class="eyebrow">第 01 天 · 抵达</p><h2>北京 → 呼和浩特</h2><p class="detail-route">城市老城短停 + 呼和浩特地方风味</p><h4>时间表</h4><ul><li>高铁抵达后：酒店寄存行李、午餐。</li><li>下午：宝尔汗佛塔 → 观音寺 → 大召寺 → 塞上老街，建筑快速参观与拍照。</li><li>傍晚：清真大寺、五塔寺、将军衙署按开放时间衔接。</li><li>晚餐：烧麦、手把肉、羊杂碎、奶茶；体力和天气合适时前往大青山观景平台。</li></ul><h4>住宿</h4><p>呼和浩特全程连住，酒店选择有停车位、靠近主干道的新华东街沿线或市区东北方向；老城晚餐可短途打车。</p></section>
+      <section data-day-detail="g2d2"><p class="eyebrow">第 02 天 · 模块 A</p><h2>黄花窝铺 → 红石崖</h2><p class="detail-route">草甸、牧场与红色岩壁，路线参考 <a href="https://www.xiaohongshu.com/discovery/item/6a36ba3c000000001503f652" target="_blank" rel="noopener">小红书《呼市近郊环线自驾游记》↗</a></p><h4>距离与车程</h4><table><tr><th>路段</th><th>距离</th><th>车程</th></tr><tr><td>酒店 → 黄花窝铺</td><td>35–50 km</td><td>60–90 min</td></tr><tr><td>黄花窝铺 → 红石崖</td><td>15–25 km</td><td>30–50 min</td></tr><tr><td>红石崖内部</td><td>10–25 km</td><td>30–60 min</td></tr><tr><td>红石崖 → 酒店</td><td>55–75 km</td><td>80–110 min</td></tr></table><h4>时间表</h4><ul><li>10:00–11:15：酒店出发，前往黄花窝铺。</li><li>11:15–12:00：入口附近开放观景位置拍草坡、林草交界和山谷。</li><li>12:00–12:45：开往红石崖，途中正规停车点短停。</li><li>12:45–13:30：午餐、购票，确认自驾区域和离园时间。</li><li>13:30–16:15：红石崖高山牧场、草甸、岩壁和寺院；骑马、滑草、玻璃桥按兴趣选一项。</li><li>16:15–18:00：返呼，晚餐。</li></ul><h4>九龙湾安排</h4><p>红石崖与九龙湾相距约 20 多公里。九龙湾完整游览日采用“酒店 → 九龙湾（约 45–65 km）→ 敕勒川（约 35–55 km）→ 酒店”路线，约 100–150 km，集中体验森林、沟谷和水景；红石崖安排在 A 日。</p><p class="small-note">黄花窝铺观光车和红石崖门票价格以当日售票页面为准，公开游记中的 38 元、53/60 元作为预算参考。</p></section>
+      <section data-day-detail="g2d3"><p class="eyebrow">第 03 天 · 模块 B</p><h2>哈达门 → 敕勒川</h2><p class="detail-route">森林、高山草甸与平地草原</p><h4>距离与车程</h4><table><tr><th>路段</th><th>距离</th><th>车程</th></tr><tr><td>酒店 → 哈达门入口</td><td>30–45 km</td><td>50–80 min</td></tr><tr><td>哈达门 → 敕勒川停车场</td><td>45–65 km</td><td>75–105 min</td></tr><tr><td>敕勒川 → 酒店</td><td>20–30 km</td><td>35–55 min</td></tr></table><h4>时间表</h4><ul><li>10:00–11:15：到哈达门停车场，购票、乘景交到主要区域。</li><li>11:15–12:00：接驳上山。</li><li>12:00–14:30：料木山观景台、森林木栈道、高山草甸和小鹿互动区，名称与开放状态以现场为准。</li><li>14:30–15:00：景交下山，补给。</li><li>15:00–16:30：前往敕勒川，安排开放步道散步。</li><li>17:30–18:30：回呼市晚餐。</li></ul><h4>费用与季节</h4><p>哈达门门票+往返观光车按公开游记约 70 元/人预算，景区运营路线、营业时间、景交末班和呼武旧路交通组织以当期公告为准。敕勒川安排 45–60 分钟，秋季森林景色以当年天气和叶色为准。</p></section>
+      <section data-day-detail="g2d4"><p class="eyebrow">第 04 天 · 模块 C</p><h2>科凉线 → 牛粑粑 → 黄花沟外围 → 二阳卜</h2><p class="detail-route">远郊草原公路一日线，路线参考 <a href="https://www.xiaohongshu.com/discovery/item/6a36ba3c000000001503f652" target="_blank" rel="noopener">小红书《呼市近郊环线自驾游记》↗</a></p><h4>距离与车程</h4><table><tr><th>路段</th><th>距离</th><th>车程</th></tr><tr><td>酒店 → 牛粑粑所选分区</td><td>130–160 km</td><td>2–2.75 h</td></tr><tr><td>牛粑粑 → 黄花沟南门外围</td><td>5–15 km</td><td>10–25 min</td></tr><tr><td>黄花沟外围 → 二阳卜村</td><td>5–15 km</td><td>15–30 min</td></tr><tr><td>二阳卜 → 酒店</td><td>140–170 km</td><td>2.25–3 h</td></tr></table><h4>时间表</h4><ul><li>10:00–12:30：出城前往辉腾锡勒方向。</li><li>12:30–13:15：牛粑粑选一个分区，看湖面、风车和草地。</li><li>13:15–14:00：简餐。</li><li>14:00–14:30：黄花沟南门外围道路短停。</li><li>14:30–16:00：二阳卜村及已确认开放的观景位置。</li><li>16:00–19:00：返呼，按远线完整车程安排。</li></ul><h4>景点与费用</h4><p>黄花沟购票入园时改为黄花沟单景区日。牛粑粑东、西区位置和停车方式按当天地图确认；二阳卜土坡路以确认开放为准。外围方案按现场停车、骑马、草原运营区及其他活动费用预算。</p></section>
+      <section data-day-detail="g2d5"><p class="eyebrow">第 05 天 · 模块 D</p><h2>内蒙古博物院新馆 → 内蒙古美术馆</h2><p class="detail-route">室内参观约 6–7 小时含交通与午餐</p><h4>场馆信息</h4><table><tr><th>场馆</th><th>重点</th><th>地址</th></tr><tr><td>内蒙古博物院新馆</td><td>草原历史、考古、民族文化、古生物</td><td>新华东街 76 号</td></tr><tr><td>内蒙古美术馆</td><td>当期绘画、雕塑与主题展览</td><td>新华东街 20 号</td></tr></table><h4>时间表</h4><ul><li>10:00–10:40：酒店 → 博物院新馆，按预约时段入馆。</li><li>10:40–13:30：重点参观历史、人文、古生物或临展。</li><li>13:30–14:20：新华东街沿线午餐。</li><li>14:20–14:40：前往美术馆，馆间约 2–5 km、10–20 分钟。</li><li>14:40–16:30：选择 2–3 个当期展厅。</li></ul><h4>预约与替换</h4><p>博物院按官网、公众号或“云游内博”提前 7 天预约，常规开放 09:00–17:00、16:00 停止入馆，周一闭馆安排以公告为准。美术馆常规开放周二至周日 09:00–17:00、16:30 停止入场，展览免费，身份证核验入馆。偏好恐龙、矿石和化石时，可将美术馆替换为内蒙古自然博物馆（南二环路 13 号），馆间约 12–18 km、30–45 分钟。</p><p class="source-link"><a href="https://www.baotounews.com.cn/445807/445797/2025/05/39270565.html" target="_blank" rel="noopener">内蒙古博物院新馆公告↗</a> · <a href="https://www.amoim.cn/" target="_blank" rel="noopener">内蒙古美术馆参观信息↗</a></p></section>
+      <section data-day-detail="g2d6"><p class="eyebrow">第 06 天 · 返程</p><h2>呼和浩特 → 北京</h2><p class="detail-route">呼和浩特东站乘高铁返京</p><h4>安排</h4><ul><li>上午：酒店早餐、退房、整理行李。</li><li>还车：办理验车、结算和取回随身物品。</li><li>返程：前往呼和浩特东站，乘高铁返回北京。</li></ul><h4>备用安排</h4><p>租车合同支持异地还车时，可在乌兰察布结束后直接乘车返京；市区还车时，车辆、进站与高铁时间按当天车次预留余量。</p></section>
+    </div>
+
+    <dialog class="day-dialog" id="day-dialog"><div class="dialog-inner"><button class="dialog-close" type="button" aria-label="关闭">×</button><div id="day-detail"></div></div></dialog>
+
+    <section class="section practical" id="notes">
+      <div class="section-heading"><p class="eyebrow">出发前备忘</p><h2>出发前备忘</h2></div>
+      <div class="note-grid"><div><b>车辆</b><p>确认停车、保险、非铺装路限制和还车时间；山路减速，正规位置停车。</p></div><div><b>景区</b><p>确认红石崖、九龙湾、哈达门的国庆票种、开放道路、景交末班和预约。</p></div><div><b>室内</b><p>先预约内蒙古博物院；美术馆查看当期展览和闭馆日。</p></div><div><b>装备</b><p>防风外套、防滑鞋、饮水、简餐、墨镜和充电宝。十月山上比市区冷。</p></div></div>
+      <div class="detail-summary guide2-facts"><div><span>导航定位</span><b>黄花窝铺高山草原、红石崖国家生态公园、圣水梁九龙湾景区</b></div><div><span>日落参考</span><b>10 月 1–7 日约 18:16 提前至 18:06</b></div><div><span>天气切换</span><b>岱海湿地、红石崖、集宁周边草原公路</b></div><div><span>预约重点</span><b>博物院提前 7 天；景区票种与交通按当期公告</b></div></div>
+      <p class="source-link bottom-source"><a href="https://www.xiaohongshu.com/discovery/item/6a36ba3c000000001503f652" target="_blank" rel="noopener">小红书近郊环线自驾游记↗</a> · <a href="https://www.wuchuan.gov.cn/zfxxgknew_27916/bmxxgk/xzfzcbm/gaj/zfxxgknew_27916/fdzdgknr/tzgg/202509/t20250929_1938012.html" target="_blank" rel="noopener">哈达门交通公告↗</a></p>
+    </section>
+
+    <footer><span>国庆旅行攻略</span><span>路线与价格请以出发当天官方信息为准</span></footer>
+  </main>
+  <script src="app.js?v=20260914c"></script>
+</body>
+</html>
